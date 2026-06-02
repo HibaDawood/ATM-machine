@@ -1,26 +1,34 @@
-# h220_todos_list
-<h1 align="center">Hi 👋, I'm Hiba M.Dawood</h1>
-<h3 align="center">A passionate full-stack developer from Pakistan.</h3>
+# 🏧 CLI ATM Machine
 
+An interactive, command-line based Automated Teller Machine (ATM) simulator built with TypeScript and Node.js. It features secure PIN authentication, real-time balance checking, and smart withdrawal safety limits.
 
-<p align="left"> <img align="right" alt="coding" width="350" src="https://user-images.githubusercontent.com/74038190/212747903-e9bdf048-2dc8-41f9-b973-0e72ff07bfba.gif" alt="hibadawood" /> </p>
+---
 
-- 🌱 I’m currently learning **cloud Applied generative AI**
+## ✨ Features
 
-- 👨‍💻 All of my projects are available at [https://github.com/HibaDawood](https://github.com/HibaDawood)
+* **Secure PIN Authentication:** Simulates a real banking login verification system.
+* **Smart Withdrawal Validation:** Prevents over-drafting by checking if the requested amount exceeds the current balance.
+* **Interactive Options Menu:** Clean navigation between functions using the `inquirer` list prompt.
+* **Vibrant Interface:** Error messages and success logs are clearly highlighted using `chalk`.
 
-- 💬 Ask me about **Scalable, creative, cloud-based AI solution.**
+---
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/hiba m dawood" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="hiba m dawood" height="30" width="40" /></a>
-</p>
+## 🛠️ Architecture Flow
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> </p>
+The logic follows a conditional security clearing structure:
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=hibadawood&show_icons=true&locale=en&layout=compact" alt="hibadawood" /></p>
+$$\text{Authentication Check} \rightarrow \text{Select Operation} \rightarrow \begin{cases} \text{Check Balance} \\ \text{Withdraw Amount} \rightarrow (\text{Amount} \le \text{Balance}) \end{cases}$$
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=hibadawood&show_icons=true&locale=en" alt="hibadawood" /></p>
+---
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=hibadawood&" alt="hibadawood" /></p
+## 🚀 How to Run & Use
+
+1. Navigate to the project folder in your terminal.
+2. Install the necessary Node packages:
+   ```bash
+   npm install inquirer chalk
+
+3. Compile and run the application:
+
+```bash
+npx tsc && node index.js
